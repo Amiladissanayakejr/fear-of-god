@@ -1,0 +1,6 @@
+{
+  "name": "sacred-rhythm",
+  "version": "1.0.0",
+  "scripts": { "dev": "vite", "build": "vite --host 0.0.0.0" },
+  "devDependencies": { "vite": "latest" }
+}

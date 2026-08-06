@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fbf8f1" />
+    <title>FEAR OF GOD | PRAYER &amp; GOSPEL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./home-image.css" />
+    <link rel="stylesheet" href="./companion.css" />
+    <link rel="stylesheet" href="./motion.css" />
+    <link rel="stylesheet" href="./journey.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar">
+        <button class="icon-button" aria-label="Profile"><span class="avatar">A</span></button>
+        <div class="brand"><span class="brand-mark">✦</span> FEAR OF GOD</div>
+        <button class="icon-button" aria-label="Notifications" id="notificationButton"><span class="bell">♧</span><i></i></button>
+      </section>
+
+      <section class="home-screen screen active" id="home">
+        <div class="greeting"><p>THURSDAY, JULY 17</p><h1>Peace be with you,<br><em>Amelia.</em></h1></div>
+
+        <section class="gospel-card">
+          <div class="gospel-top"><span class="eyebrow">TODAY'S GOSPEL</span><span>JOHN 20:24–29</span></div>
+          <h2>“Blessed are those who have not seen and have believed.”</h2>
+          <p>Jesus meets Thomas in his doubt and invites him to a faith that rests in love.</p>
+          <div class="gospel-actions"><button class="gospel-read" id="readGospel">Read Gospel <span>→</span></button><button class="save-button" data-save="Today's Gospel" aria-label="Save today's Gospel">♡</button></div>
+        </section>
+
+        <section class="reflection-card">
+          <div><span class="eyebrow">TODAY'S REFLECTION</span><h3>Meet him in the ordinary.</h3><p>Faith is not the absence of questions. It is returning to Jesus with an open heart, even when we cannot yet see the whole way.</p></div><button class="text-button" id="openReflection">Reflect</button>
+        </section>
+
+        <article class="daily-card">
+          <div class="sunburst">☼</div>
+          <div class="card-label">YOUR DAILY RHYTHM</div>
+          <h2>Make space<br>for the sacred.</h2>
+          <p>Pause for a moment of grace today.</p>
+          <button class="primary-button" id="prayNow">Begin prayer <span>→</span></button>
+          <div class="curve"></div>
+        </article>
+
+        <article class="jesus-card">
+          <img src="./assets/vintage-jesus.png" alt="Vintage devotional portrait of Jesus Christ" />
+          <div class="jesus-caption"><span class="eyebrow">SACRED HEART OF JESUS</span><p>“Come to me, all you who are weary.”</p></div>
+        </article>
+
+        <div class="section-row"><h3>Today’s prayer</h3><button class="text-button" data-target="prayers">See all</button></div>
+        <article class="prayer-preview" id="openPrayer">
+          <div class="prayer-icon">✣</div>
+          <div><span class="eyebrow">MORNING OFFERING</span><h4>Start the day with intention</h4><p>“O Jesus, through the Immaculate Heart of Mary…”</p></div>
+          <span class="chevron">›</span>
+        </article>
+
+        <article class="audio-prayer">
+          <div class="audio-art"><span>✦</span></div><div class="audio-info"><span class="eyebrow">PRAY WITH AUDIO</span><h4>Morning Offering</h4><p>Gentle voice · 3 min</p></div><button class="audio-play" id="audioPrayer" aria-label="Play Morning Offering">▶</button>
+        </article>
+
+        <div class="section-row progress-heading"><h3>Your rhythm</h3><span class="small-stats">3 days this week</span></div>
+        <article class="rhythm-card">
+          <div class="week"><div class="day done"><b>M</b><span>14</span></div><div class="day done"><b>T</b><span>15</span></div><div class="day done"><b>W</b><span>16</span></div><div class="day today"><b>T</b><span>17</span></div><div class="day"><b>F</b><span>18</span></div><div class="day"><b>S</b><span>19</span></div><div class="day"><b>S</b><span>20</span></div></div>
+          <div class="streak-line"><span class="flame">✦</span><strong><span id="streakCount">3</span> day streak</strong><span>Keep showing up.</span></div>
+        </article>
+
+        <article class="verse-card"><span class="quote-mark">“</span><p id="verseText">The Lord is near to all who call upon him.</p><span id="verseRef">PSALM 145:18</span><button class="refresh" id="newVerse" aria-label="New verse">↻</button></article>
+
+        <article class="saint-card">
+          <img src="./assets/vintage-jesus.png" alt="Sacred Heart devotional artwork" />
+          <div><span class="eyebrow">SAINT OF THE DAY</span><h3>St. Thérèse of Lisieux</h3><p>“Remember that nothing is small in the eyes of God.”</p><button class="text-button" id="saintStory">Her story →</button></div>
+        </article>
+
+        <article class="journey-card">
+          <div><span class="eyebrow">FEAR OF GOD | BIBLE JOURNEY</span><h3>Walk through Scripture,<br>one day at a time.</h3><p>Daily Scripture, a short reflection, and a prayer to carry with you.</p></div><button id="bibleJourney">Begin today →</button>
+        </article>
+        <article class="hero-card"><span class="hero-mark">✣</span><div><span class="eyebrow">HERO OF THE FAITH</span><h3>St. Maximilian Kolbe</h3><p>A life poured out in courageous love.</p></div><button class="text-button" id="heroStory">Read story →</button></article>
+      </section>
+
+      <section class="screen" id="prayers">
+        <header class="page-heading"><p>PRAYER LIBRARY</p><h1>Pray with the<br><em>Church.</em></h1></header>
+        <div class="category-pills"><button class="pill active">All</button><button class="pill">Daily</button><button class="pill">Devotions</button><button class="pill">Needs</button></div>
+        <div class="prayer-list">
+          <button class="prayer-item" data-prayer="Morning Offering"><span class="item-symbol gold">☼</span><span><b>Morning Offering</b><small>Begin your day with God</small></span><i>›</i></button>
+          <button class="prayer-item" data-prayer="The Angelus"><span class="item-symbol blue">✦</span><span><b>The Angelus</b><small>A noon devotion to the Incarnation</small></span><i>›</i></button>
+          <button class="prayer-item" data-prayer="Prayer for Peace"><span class="item-symbol rose">♡</span><span><b>Prayer for Peace</b><small>For calm in a restless heart</small></span><i>›</i></button>
+          <button class="prayer-item" data-prayer="Prayer of Gratitude"><span class="item-symbol green">✣</span><span><b>Prayer of Gratitude</b><small>Notice the gifts of this day</small></span><i>›</i></button>
+          <button class="prayer-item" data-prayer="Night Prayer"><span class="item-symbol violet">☾</span><span><b>Night Prayer</b><small>Rest in God’s presence</small></span><i>›</i></button>
+        </div>
+      </section>
+
+      <section class="screen" id="rosary">
+        <header class="page-heading rosary-heading"><p>THURSDAY • LUMINOUS MYSTERIES</p><h1>Pray the<br><em>Rosary.</em></h1></header>
+        <article class="rosary-card">
+          <div class="beads"><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>✝</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span></div>
+          <p class="eyebrow">FIRST LUMINOUS MYSTERY</p><h2>The Baptism of Jesus</h2><p class="rosary-copy">Jesus is baptized in the Jordan, and the Father’s voice calls him beloved.</p>
+          <div class="decade"><span id="beadNumber">1</span><div><b>Hail Mary</b><small>Bead 1 of 10</small></div><button id="nextBead">Next ›</button></div>
+        </article>
+        <p class="rosary-prayer" id="rosaryPrayer">Hail Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, Jesus.</p>
+      </section>
+
+      <section class="screen" id="journal">
+        <header class="page-heading"><p>YOUR JOURNEY</p><h1>A faithful<br><em>little life.</em></h1></header>
+        <div class="stat-grid"><article><b id="prayerTotal">12</b><span>prayers this month</span></article><article><b>3</b><span>day current streak</span></article></div>
+        <article class="encouragement"><span>✦</span><div><p class="eyebrow">A GENTLE WORD</p><h3>Small prayers shape a holy life.</h3><p>God delights in every moment you turn your heart toward him.</p></div></article>
+        <article class="saved-card"><span>♡</span><div><b><span id="savedCount">0</span> saved prayers</b><small>Your personal collection, always close at hand.</small></div><button id="openSaved">View ›</button></article>
+        <h3 class="journal-title">This week</h3><div class="activity"><span class="activity-dot"></span><div><b>Morning Offering</b><small>Today, 7:42 AM</small></div><em>5 min</em></div><div class="activity"><span class="activity-dot pale"></span><div><b>Prayer for Peace</b><small>Yesterday, 9:14 PM</small></div><em>3 min</em></div>
+      </section>
+
+      <nav class="bottom-nav">
+        <button class="nav-item active" data-target="home"><span>⌂</span><b>Today</b></button><button class="nav-item" data-target="prayers"><span>☷</span><b>Prayers</b></button><button class="nav-item" data-target="rosary"><span>◌</span><b>Rosary</b></button><button class="nav-item" data-target="journal"><span>♧</span><b>Journey</b></button>
+      </nav>
+    </main>
+    <div class="modal-backdrop" id="modal"><article class="prayer-modal"><button class="close-modal" id="closeModal">×</button><span class="eyebrow">A MOMENT WITH GOD</span><button class="modal-save" id="saveCurrentPrayer" aria-label="Save this prayer">♡</button><h2 id="modalTitle">Morning Offering</h2><p id="modalPrayer">O Jesus, through the Immaculate Heart of Mary, I offer you all my prayers, works, joys, and sufferings of this day.</p><div class="timer"><span id="timerText">03:00</span><button id="timerButton">Start timer</button></div><button class="primary-button full" id="completePrayer">I have prayed <span>✓</span></button></article></div>
+    <div class="modal-backdrop" id="reminderModal"><article class="prayer-modal reminder-modal"><button class="close-modal" data-close-reminder>×</button><span class="reminder-icon">☼</span><span class="eyebrow">A GENTLE REMINDER</span><h2>Take one minute<br>to be with Jesus.</h2><p>Choose a quiet moment today. He is already waiting for you.</p><button class="primary-button full" id="setReminder">Set a daily reminder <span>✓</span></button></article></div>
+    <script src="./app.js"></script>
+    <script src="./companion.js"></script>
+  </body>
+</html>
